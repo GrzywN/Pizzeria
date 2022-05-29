@@ -1,0 +1,33 @@
+.hamburger {
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  transform: translateX(2rem) translateY(-50%);
+
+  width: 1.25rem;
+  height: 1.125rem;
+
+  background-image: url(../assets/icons/hamburger.svg);
+  background-size: 1.25rem 1rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &[data-expanded='false'] {
+    background-image: url(../assets/icons/hamburger.svg);
+    background-size: 1.25rem 1rem;
+    animation: hamburgerClose $transition-default;
+  }
+
+  &[data-expanded='true'] {
+    background-image: url(../assets/icons/close.svg);
+    background-size: 1.125rem 1.125rem;
+    animation: hamburgerOpen $transition-default;
+  }
+
+  @include media('>=medium') {
+    display: none;
+  }
+}

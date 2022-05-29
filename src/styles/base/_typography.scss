@@ -1,0 +1,116 @@
+html {
+  font-family: $font-sans-serif;
+}
+
+*,
+:before,
+:after {
+  font-family: inherit;
+  word-wrap: break-word;
+
+  @include media('<small') {
+    word-break: break-word;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+
+  font-size: 2rem;
+  letter-spacing: 0;
+  line-height: 110%;
+}
+
+h2 {
+  letter-spacing: 0;
+  line-height: 100%;
+
+  font-size: 4rem;
+  text-align: center;
+
+  @include media('>=medium') {
+    font-size: 6rem;
+    text-align: left;
+  }
+}
+
+h2 small {
+  font-size: 2rem;
+  text-align: center;
+
+  @include media('>=medium') {
+    font-size: 4rem;
+    text-align: left;
+  }
+}
+
+p,
+label {
+  font-size: 1.125rem;
+  letter-spacing: -1px;
+  line-height: 150%;
+
+  text-align: center;
+
+  @include media('>=medium') {
+    text-align: left;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  font-weight: 700;
+
+  line-height: 1.5625rem;
+  letter-spacing: 0;
+
+  font-size: 1.125rem;
+
+  @include media('>=medium') {
+    font-size: 0.9375rem;
+  }
+}
+
+button,
+input[type='submit'] {
+  font-family: $font-cursive;
+  font-weight: 700;
+
+  line-height: 1.5625rem;
+  letter-spacing: 0;
+
+  font-size: 1.125rem;
+
+  @include media('>=medium') {
+    font-size: 0.9375rem;
+  }
+}
+
+em {
+  font-family: $font-cursive;
+  font-style: normal;
+}
+
+form,
+::placeholder {
+  text-align: center;
+}
+
+label {
+  font-weight: 400;
+}
+
+::placeholder {
+  font-weight: 300;
+}

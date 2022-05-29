@@ -1,0 +1,98 @@
+.hamburger {
+  background-color: transparent;
+}
+
+.header {
+  background-color: $color-dark-grey;
+}
+
+.header__container {
+  background-color: $color-dark-grey;
+}
+
+.header__logo-header {
+  color: $color-white;
+  text-transform: lowercase;
+}
+
+.header__logo-header--accent,
+.section__header--accent {
+  color: $color-yellow;
+  text-transform: capitalize;
+}
+
+.header__nav {
+  @include media('<medium') {
+    background-color: $color-dark-grey;
+  }
+}
+
+.header__nav-link {
+  color: $color-light-grey;
+
+  @include media('>=medium') {
+    color: $color-dim-grey;
+  }
+}
+
+.button {
+  background-color: $color-yellow;
+  color: $color-white;
+}
+
+.header__nav-backdrop {
+  background-color: rgba(0, 0, 0, 0.7473);
+}
+
+.section__paragraph {
+  color: $color-dark-grey;
+  &--form {
+    color: $color-white;
+  }
+}
+
+.section__container--map .section__heading {
+  color: $color-light-yellow;
+}
+
+.section__container--map #map {
+  border-color: $color-light-yellow;
+}
+
+.section__header::after {
+  background-color: $color-light-yellow;
+}
+
+body#about .section__header {
+  color: $color-yellow;
+}
+
+.section__form-container {
+  background-color: $color-dark-grey;
+  color: white;
+}
+
+*:focus {
+  outline: 0.25rem dashed $color-yellow;
+}
+
+input,
+textarea,
+select {
+  background-color: $color-white;
+  border: 1px solid $color-yellow;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: $color-yellow;
+  border-color: $color-yellow;
+}
+
+.header__nav-link {
+  @extend %transition;
+
+  &:hover {
+    color: $color-white;
+  }
+}

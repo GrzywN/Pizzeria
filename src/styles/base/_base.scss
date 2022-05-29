@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  // border: 1px dashed red;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  padding-top: 6rem;
+
+  @include media('>=medium') {
+    padding-top: 0;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}

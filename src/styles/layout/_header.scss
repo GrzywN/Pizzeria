@@ -1,0 +1,126 @@
+.header {
+  width: 100%;
+  position: fixed;
+
+  z-index: 9999;
+  &__logo-link {
+    display: flex;
+    flex-direction: column;
+    max-width: 10rem;
+  }
+
+  &__nav,
+  &__nav-backdrop {
+    @extend %transition;
+  }
+
+  @include media('<medium') {
+    $header-mobile-height: 6rem;
+
+    &__container {
+      height: $header-mobile-height;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__nav {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 31.73%;
+
+      margin-top: $header-mobile-height;
+      padding-top: 4rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 1.5rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      transform-origin: left top;
+
+      &[data-expanded='true'] {
+        transform: scaleX(1);
+      }
+
+      &[data-expanded='false'] {
+        transform: scaleX(0);
+      }
+
+      &[data-expanded='true'] + .header__nav-backdrop {
+        opacity: 1;
+      }
+      &[data-expanded='false'] + .header__nav-backdrop {
+        opacity: 0;
+      }
+    }
+
+    &__nav-list {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    &__nav-link {
+      display: block;
+    }
+
+    &__nav-backdrop {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      z-index: -1;
+    }
+  }
+
+  @include media('>=medium') {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+    &__container {
+      width: $container-width;
+      height: 6rem;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3.625rem;
+    }
+
+    &__nav {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__nav-list {
+      display: flex;
+      gap: 2rem;
+    }
+
+    &__nav-backdrop {
+      display: none;
+    }
+  }
+
+  @include media('>=medium') {
+    &__container {
+      margin-left: 0.125rem;
+    }
+  }
+}

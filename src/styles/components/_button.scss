@@ -1,0 +1,20 @@
+.button {
+  cursor: pointer;
+
+  width: min(100%, 11.25rem);
+  height: 3.3125rem;
+  border-radius: 0.25rem;
+
+  @extend %transition;
+
+  &:hover {
+    border-style: solid;
+    border-width: 0.125rem;
+  }
+
+  @include media('<medium') {
+    &--nav {
+      width: min(100%, 12rem);
+    }
+  }
+}

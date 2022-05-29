@@ -1,0 +1,11 @@
+body#home {
+  background-image: url('../assets/backgrounds/home.jpg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #dde1e2;
+
+  @include media('<medium') {
+    background-position: center;
+  }
+}

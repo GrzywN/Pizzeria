@@ -1,0 +1,10 @@
+.swiper {
+  height: 30rem;
+  width: 40rem;
+  max-width: calc(100vw - 2rem);
+
+  &-slide {
+    background-size: cover;
+    background-position: center center;
+  }
+}

@@ -1,0 +1,38 @@
+$transition-default: 250ms ease;
+
+%transition {
+  transition: $transition-default;
+  transition-property: color, background-color, transform, opacity;
+}
+
+@include keyframes(hamburgerOpen) {
+  0% {
+    opacity: 1;
+    background-image: url(../assets/icons/hamburger.svg);
+    background-size: 1.25rem 1rem;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background-image: url(../assets/icons/close.svg);
+    background-size: 1.125rem 1.125rem;
+  }
+}
+
+@include keyframes(hamburgerClose) {
+  0% {
+    opacity: 1;
+    background-image: url(../assets/icons/close.svg);
+    background-size: 1.125rem 1.125rem;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background-image: url(../assets/icons/hamburger.svg);
+    background-size: 1.25rem 1rem;
+  }
+}
