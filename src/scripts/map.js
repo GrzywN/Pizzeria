@@ -2,6 +2,7 @@ class Map {
   constructor(markerCoords) {
     this.markerCoords = markerCoords;
     this.popupMessage = popupMessage;
+    this.init();
   }
 
   static createIcon() {
