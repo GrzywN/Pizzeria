@@ -1,5 +1,5 @@
 class Map {
-  constructor(markerCoords) {
+  constructor(markerCoords, popupMessage) {
     this.markerCoords = markerCoords;
     this.popupMessage = popupMessage;
     this.init();
@@ -53,8 +53,11 @@ class Map {
   bindPopup() {
     this.marker.bindPopup(this.popupMessage);
   }
+
+
 }
 
 const markerCoordinates = [50.815347, 19.107427];
 const popupMessage = 'Pizzeria Karola';
+
 const map = new Map(markerCoordinates, popupMessage);
