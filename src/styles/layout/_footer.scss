@@ -15,10 +15,24 @@
     text-align: center;
   }
 
-  &__nav-item {
+  &__social-list {
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
   }
+
+  &__social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__social-img {
+    width: 1rem;
+    height: auto;
+  }
+
 }
 
-.footer {
-  background-color: $color-dark-grey;
-}
