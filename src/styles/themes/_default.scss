@@ -1,3 +1,8 @@
+body {
+  scrollbar-color: dark;
+  scrollbar-color: $color-dark-grey;
+}
+
 .hamburger {
   background-color: transparent;
 }
@@ -99,4 +104,8 @@ select {
 
 .footer {
   background-color: $color-dark-grey;
+}
+
+.footer__designed-by {
+  color: $color-white;
 }

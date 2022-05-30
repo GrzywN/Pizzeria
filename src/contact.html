@@ -2,18 +2,26 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Karol Binkowski" />
+    <meta name="title" content="Pizzeria u Karola" />
     <meta name="description" content="Strona internetowa Pizzerii u Karola" />
     <meta
       name="keywords"
       content="Pizza, pizzeria, karol, binkowski, karol binkowski, pizzeria karol binkowski"
     />
-    <script src="scripts/nav.js" defer></script>
-    <script src="scripts/modal.js" defer></script>
-    <link rel="stylesheet" href="styles/main.scss" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="language" content="Polish" />
+    <meta name="revisit-after" content="30 days" />
+    <meta name="author" content="Karol Binkowski" />
+
     <title>Pizzeria u Karola</title>
+
+    <script src="scripts/index.js" type="module"></script>
+
+    <link rel="stylesheet" href="styles/main.scss" />
+
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
   </head>
   <body id="contact">
     <header class="header">
@@ -58,14 +66,14 @@
           <h2 class="section__header">
             <small>Skontaktuj się <em class="yellow-accent">z nami</em></small>
           </h2>
-          <form class="form" action="" method="post" onsubmit="event.preventDefault()">
+          <form class="form" method="post" onsubmit="event.preventDefault()">
             <div class="form__group">
-              <label for="name" class="form__label">Imię</label>
+              <label for="full-name" class="form__label">Imię i nazwisko</label>
               <input
                 type="text"
-                id="name"
+                id="full-name"
                 class="form__input"
-                placeholder="Wpisz swoje imię"
+                placeholder="Wpisz swoje imię i nazwisko"
                 required
               />
             </div>
@@ -93,5 +101,23 @@
         </div>
       </section>
     </main>
+    <footer id="footer" class="footer">
+      <div class="footer__socials">
+        <a href="#" class="footer__img-container">
+          <img src="./assets/icons/facebook.svg" alt="Facebook" class="footer__img" />
+        </a>
+        <a href="#" class="footer__img-container">
+          <img src="./assets/icons/instagram.svg" alt="Instagram" class="footer__img" />
+        </a>
+        <a href="#" class="footer__img-container">
+          <img src="./assets/icons/twitter.svg" alt="Twitter" class="footer__img" />
+        </a>
+      </div>
+      <div class="footer__designed-by">
+        <a class="footer__link" href="https://github.com/GrzywN" target="_blank">
+          <h3>Designed and coded by <em class="yellow-accent">Karol Binkowski</em> @ 2022</h3>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

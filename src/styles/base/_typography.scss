@@ -13,11 +13,6 @@ html {
   }
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 h1 {
   text-align: center;
 
@@ -49,6 +44,33 @@ h2 small {
   }
 }
 
+h3 {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  line-height: 150%;
+
+  @include media('>=medium') {
+    font-size: 1.25rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  color: inherit;
+
+  font-weight: 700;
+
+  line-height: 1.5625rem;
+  letter-spacing: 0;
+
+  font-size: 1.125rem;
+
+  @include media('>=medium') {
+    font-size: 0.9375rem;
+  }
+}
+
 p,
 label {
   font-size: 1.125rem;
@@ -62,24 +84,26 @@ label {
   }
 }
 
+label {
+  font-weight: 400;
+}
+
+form,
+::placeholder {
+  text-align: center;
+}
+
+::placeholder {
+  font-weight: 300;
+}
+
 ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-
-  font-weight: 700;
-
-  line-height: 1.5625rem;
-  letter-spacing: 0;
-
-  font-size: 1.125rem;
-
-  @include media('>=medium') {
-    font-size: 0.9375rem;
-  }
+em {
+  font-family: $font-cursive;
+  font-style: normal;
 }
 
 button,
@@ -95,22 +119,4 @@ input[type='submit'] {
   @include media('>=medium') {
     font-size: 0.9375rem;
   }
-}
-
-em {
-  font-family: $font-cursive;
-  font-style: normal;
-}
-
-form,
-::placeholder {
-  text-align: center;
-}
-
-label {
-  font-weight: 400;
-}
-
-::placeholder {
-  font-weight: 300;
 }

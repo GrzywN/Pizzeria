@@ -91,7 +91,7 @@
     padding-right: 2.5rem;
 
     &__container {
-      width: $container-width;
+      @include container-width;
       height: 6rem;
 
       display: flex;

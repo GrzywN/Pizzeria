@@ -1,7 +1,8 @@
 .button {
   cursor: pointer;
 
-  width: min(100%, 11.25rem);
+  width: 100%;
+  max-width: 11.25rem;
   height: 3.3125rem;
   border-radius: 0.25rem;
 

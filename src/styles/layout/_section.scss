@@ -14,7 +14,7 @@
   &__container {
     position: relative;
 
-    width: $container-width;
+    @include container-width;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -81,7 +81,7 @@
     object-fit: cover;
     border-radius: 2rem;
   }
-  
+
   @include media('>=large') {
     margin-left: 2.5rem;
     margin-right: 2.5rem;

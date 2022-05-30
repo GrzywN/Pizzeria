@@ -1,38 +1,36 @@
 .footer {
-  width: 100%;
-  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
 
-  padding: 3rem;
-
-  &__nav {
-    margin-top: 2rem;
-  }
-
-  &__nav-list {
-    display: grid;
+  &__socials {
+    display: flex;
     gap: 1rem;
+  }
 
+  &__img-container {
+    @extend %transition;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__designed-by {
     text-align: center;
+
+    @extend %transition;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
-
-  &__social-list {
-    margin-top: 2rem;
-
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  &__social-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__social-img {
-    width: 1rem;
-    height: auto;
-  }
-
 }
-

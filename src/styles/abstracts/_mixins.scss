@@ -12,3 +12,8 @@
     @content;
   }
 }
+
+@mixin container-width {
+  width: 100%;
+  max-width: 69.125rem;
+}
