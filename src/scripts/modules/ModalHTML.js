@@ -1,4 +1,7 @@
-export default modalHTML = `<div class="modal" data-active="false">
+export default class ModalHTML {
+  constructor() {}
+
+  static html = `<div class="modal" data-active="false">
   <div class="modal__container">
     <div class="modal__close" id="modal-close"></div>
     <h2 class="modal__heading">
@@ -61,3 +64,4 @@ export default modalHTML = `<div class="modal" data-active="false">
 </div>
 <div class="modal__backdrop" id="modal-backdrop"></div>
 `;
+}

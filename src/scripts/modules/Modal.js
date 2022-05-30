@@ -1,7 +1,7 @@
-import modalHTML from './ModalHTML';
+import ModalHTML from './ModalHTML';
 
 export default class Modal {
-  static modalHTML = modalHTML;
+  static modalHTML = ModalHTML.html;
 
   constructor() {
     this.init();

@@ -605,7 +605,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _modalHTML = require("./ModalHTML");
 var _modalHTMLDefault = parcelHelpers.interopDefault(_modalHTML);
 class Modal {
-    static modalHTML = (0, _modalHTMLDefault.default);
+    static modalHTML = (0, _modalHTMLDefault.default).html;
     constructor(){
         this.init();
     }
@@ -647,7 +647,9 @@ exports.default = Modal;
 },{"./ModalHTML":"kUleh","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kUleh":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-exports.default = modalHTML = `<div class="modal" data-active="false">
+class ModalHTML {
+    constructor(){}
+    static html = `<div class="modal" data-active="false">
   <div class="modal__container">
     <div class="modal__close" id="modal-close"></div>
     <h2 class="modal__heading">
@@ -710,6 +712,8 @@ exports.default = modalHTML = `<div class="modal" data-active="false">
 </div>
 <div class="modal__backdrop" id="modal-backdrop"></div>
 `;
+}
+exports.default = ModalHTML;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3RIKZ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
