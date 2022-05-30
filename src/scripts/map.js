@@ -47,11 +47,11 @@ class Map {
   }
 
   addMarkerToMap() {
-    locationMarker.addTo(this.leafletMap);
+    this.marker.addTo(this.leafletMap);
   }
 
   bindPopup() {
-    locationMarker.bindPopup(this.popupMessage);
+    this.marker.bindPopup(this.popupMessage);
   }
 }
 
