@@ -4,7 +4,4 @@
     "parcel": "^2.6.0"
   },
   "dependencies": {},
-  "browserslist": [
-    "> 5%"
-  ]
 }
