@@ -43,7 +43,7 @@ class Map {
   }
 
   createMarker() {
-    return L.marker(markerCoordinates, { icon: this.icon });
+    return L.marker(this.markerCoords, { icon: this.icon });
   }
 
   addMarkerToMap() {
