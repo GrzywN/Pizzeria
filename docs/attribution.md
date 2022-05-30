@@ -1,1 +1,0 @@
-Photo by <a href="https://unsplash.com/@thisisnando?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fernando Andrade</a> on <a href="https://unsplash.com/s/photos/pizza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

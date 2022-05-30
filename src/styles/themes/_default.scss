@@ -54,6 +54,10 @@ body {
   &--form {
     color: $color-white;
   }
+  
+  @include media('<medium') {
+    color: black;
+  }
 }
 
 .section__container--map .section__heading {
