@@ -22,7 +22,7 @@ class Map {
     this.leafletMap = this.createMap(this.coords);
     this.addLayerToMap();
     this.marker = this.createMarker();
-    this.addMarkerToMap;
+    this.addMarkerToMap();
     this.bindPopup();
   }
 
