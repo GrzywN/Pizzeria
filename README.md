@@ -40,7 +40,7 @@ I will improve this solution in the future based on your suggestions and testing
 
 ### Known bugs
 
-- The website doesn't fully display on older browsers (IE 9), the possible solution is to change `gap` properties to margins or set fallback paddings
+- The website doesn't display properly on older browsers (IE 9), the possible solution is to change `gap` properties to margins or set fallback paddings
 - The gallery doesn't work on older browsers (IE9), this is probably because of the library I used.
 
 ## Author
