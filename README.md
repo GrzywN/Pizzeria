@@ -2,7 +2,7 @@
 
 Multi-page website for local business
 
-##Table of contents
+## Table of contents
 
 - [Overview](#overview)
   - [The website](#the-website)
@@ -13,7 +13,7 @@ Multi-page website for local business
   - [Known bugs](#known-bugs)
 - [Author](#author)
 
-##Overview
+## Overview
 
 ### The website
 
